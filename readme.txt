@@ -1,0 +1,1 @@
+Modification of SC3 scart program to accept a station flag
