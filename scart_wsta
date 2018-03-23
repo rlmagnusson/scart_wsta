@@ -483,7 +483,7 @@ def usage(exitcode=0):
   sys.exit(exitcode)
 
 try:
-  opts, files = getopt(sys.argv[1:], "I:dsmEn:c:t:l:hv",
+  opts, files = getopt(sys.argv[1:], "I:dsmEn:c:t:l:hvS:",
                        ["stdout", "dump", "list=", "sort", "modify", "speed=", "files=", "verbose", "test", "help"])
 except GetoptError:
   usage(exitcode=1)
