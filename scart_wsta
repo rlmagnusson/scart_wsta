@@ -471,6 +471,7 @@ Options:
     -v, --verbose    verbose mode
         --test       test mode, no record output
     -h, --help       display this help message
+    -S               station list (comma separated), default: *
 
 Example:
 
