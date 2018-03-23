@@ -505,6 +505,7 @@ stdout       = False
 
 channels     = "(B|S|M|H|E)(L|H)(Z|N|E)"
 networks     = "*"
+stations     = "*"
 
 archiveDirectory = "./"
 
@@ -524,6 +525,7 @@ for flag, arg in opts:
     elif flag == "-I":                recordURL = arg
     elif flag == "-n":                networks = arg
     elif flag == "-c":                channels = arg
+    elif flag == "-S":                stations = arg
     else: usage(exitcode=1)
 
 
