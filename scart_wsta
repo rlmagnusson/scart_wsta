@@ -574,11 +574,18 @@ if dump:
   else:
     if networks == "*":
       it.append(tmin, tmax, "*", "*", "*", channels)
-    else:
+    elif stations == "*":
       items = networks.split(",")
       for n in items:
         n = n.strip()
         it.append(tmin, tmax, n, "*", "*", channels)
+    else:
+      nets = networks.split(",")
+      stas = stations.split(",")
+      for n in nets:
+        for ns in stas:
+          it.append(tmin, tmax, n, ns, "*", channels)
+
 
   stime = None
   realTime = seiscomp3.Core.Time.GMT()
